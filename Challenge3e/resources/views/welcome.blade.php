@@ -1,5 +1,5 @@
 @extends('layout.main')
 
-@section('title', 'Biblioteca MG')
+@section('title', '3E')
 
 @section('content')
