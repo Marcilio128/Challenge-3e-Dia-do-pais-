@@ -1,0 +1,75 @@
+*, *::before, *::after{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-primary: rgb(187, 165, 253);
+    --text-color: rgb(46, 43, 43);
+    --color-underline: rgb(147, 113, 247);
+    --rodape-color-text: rgb(0,0,0);
+    --light-color: rgb(255, 255, 255);
+    --color-card: hsla(266, 92%, 75%, 0.466);
+    --color-more: hsl(266, 92%, 75%);
+    --color-button: hsla(266, 100%, 77%, 0.719);
+    --color-border: rgba(0, 0, 0, .05);
+    --color-mbl-menu: rgba(72, 66, 92, 0.281);
+    --text-cntcs-color: rgb(230, 104, 255);
+
+}
+
+body{
+    overflow-x: hidden; 
+}
+
+body::-webkit-scrollbar{
+    width: 1px;
+
+    background: var(--color-primary) ;
+
+    border-radius: 20px;
+    border: 30px  var(--color-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+}
+
+.container{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h2, h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+a{
+    font-weight: 400;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}
