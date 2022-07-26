@@ -1,0 +1,18 @@
+.logo-3e{
+    width: 4rem;
+    height: 3rem;
+}
+.sec-initial .container{
+    display: flex;
+    justify-content: space-between;
+}
+.text-initial{
+    padding: 5rem 0 0 4rem;
+}
+.text-initial p{
+    width: 60%;
+}
+.animation-initial{
+    padding: 2rem 0 0 4rem;
+    width: 800px;
+}
