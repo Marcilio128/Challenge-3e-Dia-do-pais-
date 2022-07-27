@@ -4,7 +4,21 @@
 
 }
 .itens-registration img{
-    width: 70%;
+    width: 85%;
+    height: auto;
+}
+.registration-text{
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    color: white;
+    background-color: rgba(44, 42, 42, 0.603);
+    margin-top: 15%;
+    padding: 5rem 0 5rem 0; 
+    border-radius: 0 2rem 2rem 0;
+}
+.registration-text p{
+    margin: 1rem;
 }
 .fields-registration{   
     width: 30%;
@@ -19,7 +33,7 @@
 }
 
 .fields-registration h1{
-    margin-top: -1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     color: var(--color-primary);
 }
@@ -44,4 +58,87 @@
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 3rem;
+}
+@media only screen and (max-width: 1250px){
+    .itens-registration > img{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .itens-registration{
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+        z-index: 1;
+
+    }
+    
+    .fields-registration {
+        background-color: rgba(153, 149, 149, 0.438);
+        padding: 10rem 0 20rem 0; 
+        border-radius: 5rem;
+    }
+    
+    .fields-registration img{
+        margin-top: 10rem;
+    }
+    
+    .fields-registration h1{
+       margin-top: 1rem;
+    }
+    
+    .registration-text{
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .fields-registration{   
+        background-color: rgba(153, 149, 149, 0.438);
+        padding: 13rem 0 23rem 0;
+        margin-top: 10vh;
+        width: 30vw; 
+        border-radius: 5rem;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .fields-registration{   
+        margin-top: 5vh;
+
+    }
+}
+@media only screen and (max-width: 970px){
+    .fields-registration{   
+        margin-top: 0vh;
+        border-radius: 0%;
+        width: 50%;
+        padding: 25% 0 42% ;
+
+    }
+}
+@media only screen and (max-width: 780px){
+    .fields-registration{   
+        margin-top: 0vh;
+        top: 0%;
+        padding-top: 20%;
+        padding-bottom: 47%;
+
+    }
+}
+@media only screen and (max-width: 650px){
+    .fields-registration img{
+        margin-top: 1%;
+    }
+
+    .fields-registration{   
+      margin-top: 30%;
+      padding: 15rem 0;
+      border-radius: 3rem;
+      width: 70%;
+    }
+
+    .itens-registration > img{
+        visibility: hidden;
+    }
 }

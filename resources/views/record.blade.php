@@ -20,8 +20,15 @@
         <div class="container">
             <div class="itens-registration">
                 <img src="/assets/pai-filho.jpg" alt="">
+                <div class="registration-text">
+                    <h2>Dia dos pais na 3e soluções!!!</h2>
+                    <p>Pai é uma palavra tão curta mas com tanto significado cada um
+                    consegue da o seu significado, venha conosco e de o seu
+                </div>
+                    
+                </p>
                 <form class="fields-registration" method="_POST" action="">
-                    <img src="/assets/3e-logo-registro.jpg" alt="">
+                    <img src="/assets/3e-logo-registro.png" alt="">
                     <h1>Bem-Vindo</h1>
                     <div class="input-fields">
                         <input type="text" placeholder="Digite seu nome" />
@@ -33,6 +40,8 @@
             </form>
         </div>
     </section>
+
+    
 </body>
 </html>
 

@@ -8,7 +8,7 @@
 
 :root{
     --color-primary: rgb(203,86,22);
-    --color-secondary: hsl(47deg 99% 54%);
+    --color-secondary: rgb(254, 204, 22);
     --text-color: rgb(255, 255, 255);
     --color-underline: rgba(255, 94, 7, 0.849);
     --rodape-color-text: rgb(255, 255, 255);
