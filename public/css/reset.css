@@ -7,10 +7,10 @@
 }
 
 :root{
-    --color-primary: rgb(187, 165, 253);
-    --text-color: rgb(46, 43, 43);
-    --color-underline: rgb(147, 113, 247);
-    --rodape-color-text: rgb(0,0,0);
+    --color-primary: rgb(203,86,22);
+    --text-color: rgb(255, 255, 255);
+    --color-underline: rgba(255, 94, 7, 0.849);
+    --rodape-color-text: rgb(255, 255, 255);
     --light-color: rgb(255, 255, 255);
     --color-card: hsla(266, 92%, 75%, 0.466);
     --color-more: hsl(266, 92%, 75%);
@@ -55,7 +55,7 @@ h2, h3{
 }
 
 p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 

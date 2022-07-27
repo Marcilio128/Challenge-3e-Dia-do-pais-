@@ -1,0 +1,59 @@
+.logo-3e{
+    width: 4rem;
+    height: 3rem;
+}
+.sec-initial .container{
+    display: flex;
+    justify-content: space-between;
+}
+.text-initial{
+    padding: 5rem 0 0 4rem;
+}
+.text-initial p{
+    width: 60%;
+}
+.animation-initial{
+    padding: 2rem 0 0 4rem;
+    width: 800px;
+}
+/*sec-initial*/
+
+/*sec-meet*/
+.sec-meet .container, .meet-content{
+    display: flex;
+    justify-content: center;
+}
+.meet-content{
+    margin: auto;
+    text-align: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+.meet-turing{
+    width: 30%;
+}
+.meet-pitagoras{
+    width: 30%;
+}
+.meet-newton{
+    width: 30%;
+}
+.title-meet{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.meet-imgs{
+    width: 18rem; 
+    height: 18rem;
+
+    border-radius: 20rem;
+    margin-bottom: 2rem;
+    object-fit: cover;
+}
+.meet-content h3{
+    margin-bottom: 2rem;
+
+}
+

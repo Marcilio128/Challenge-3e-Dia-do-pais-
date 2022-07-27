@@ -22,8 +22,7 @@
 </head>
 <body>
     <header id="header" >
-
-        <h1 id="titulo" href="/">Drummond </h1>
+        <img class="logo-3e" src="/assets/logo3e.png" alt=""> </img>
 
             <nav id="nav">
 
@@ -32,8 +31,7 @@
             <ul id="menu" role="menu">
 
                 <li><a href="/">Inicio</a></li>
-                <li><a href="livros">Livros</a></li>
-                <li><a href="/contatos">Contatos</a></li>
+                <li><a href="livros">Homenagens</a></li>
                 <li><a href="/sobre">Sobre</a></li>
 
             </ul>
@@ -45,12 +43,12 @@
     <footer class="rodape"> 
 
     <div class="icon">
-        <a>&copy; Drummond</a>
-            <p>CONHEÇA NOSSAS REDES SOCIAIS</p>
+    <img class="logo-3e" src="/assets/logo3e.png" alt=""> </img>
+            <p>&copy; 3E Soluções</p>
 
-        <a href="#"><img src="/img/instagram.png" class="insta" alt=""></a>
-        <a href="#"><img src="/img/facebook.png" class="face" alt=""></a>
-        <a href="#"><img src="/img/whatsapp.png" class="wpp" alt=""></a>
+        <a href="#"><img src="/assets/instagram.png" class="insta" alt=""></a>
+        <a href="#"><img src="/assets/facebook.png" class="face" alt=""></a>
+        <a href="#"><img src="/assets/whatsapp.png" class="wpp" alt=""></a>
 
         </div>
     </footer>
