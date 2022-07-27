@@ -16,7 +16,10 @@
     list-style: none;
     gap: 5rem;
 }
-
+.logo-3e{
+    width: 4rem;
+    height: 3rem;
+}
 li a{
     color: var(--text-color);
     cursor: pointer;
@@ -112,6 +115,7 @@ li a:hover:before {
 
         height: 0;
         width: 100%;
+        padding: 0.8rem 1rem 0.8rem 2rem;
 
         top: 70px;
         right: 0px;

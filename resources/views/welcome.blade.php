@@ -12,8 +12,10 @@
                 e que sempre nós compreendeu, venha homenagear seu grande herói!!! 
             </p>
         </div>
-        <lottie-player class="animation-initial" src="https://assets4.lottiefiles.com/packages/lf20_9e8yoqkm.json"  background="transparent"  speed="1"   loop  autoplay></lottie-player>   
-     </div>
+        <div class="animation-align">
+            <lottie-player class="animation-initial" src="https://assets4.lottiefiles.com/packages/lf20_9e8yoqkm.json"  background="transparent"  speed="1"   loop  autoplay></lottie-player>   
+        </div>
+    </div>
 </section>
 
 <h1 class="title-meet">Conheça esses grandes pais</h1>
