@@ -1,0 +1,47 @@
+.itens-registration{
+    display: flex;
+    justify-content: space-between;
+
+}
+.itens-registration img{
+    width: 70%;
+}
+.fields-registration{   
+    width: 30%;
+    height: 15.60rem;
+    margin-top: 10rem;
+
+    align-items: center;
+    flex-direction: column;
+
+    display: flex;
+    justify-content: center;
+}
+
+.fields-registration h1{
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.fields-registration img{
+    width: 8rem;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+
+}
+.input-fields input{
+    border-radius: 3rem;
+    border: 1px solid var(--color-input);
+    outline: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.input-fields button{
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 3rem;
+}

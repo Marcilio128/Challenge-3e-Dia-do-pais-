@@ -8,9 +8,12 @@
 
 :root{
     --color-primary: rgb(203,86,22);
+    --color-secondary: hsl(47deg 99% 54%);
     --text-color: rgb(255, 255, 255);
     --color-underline: rgba(255, 94, 7, 0.849);
     --rodape-color-text: rgb(255, 255, 255);
+    --card-record-color: rgb(0,0,0);
+    --color-input: rgb(197, 197, 197);
 
 }
 

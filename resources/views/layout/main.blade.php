@@ -3,7 +3,6 @@
     <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="shortcut icon" href="/img/icon-book.png" type="image/x-icon" />
     
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/static.css">
