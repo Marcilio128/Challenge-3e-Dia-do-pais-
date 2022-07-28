@@ -22,6 +22,7 @@
         <div class="container">
             <div class="itens-registration">
                 <img src="/assets/pai-filho.jpg" alt="">
+                <img class="back-mobile" src="/assets/fundo-cell.jpeg" alt="">
                 <div class="registration-text">
                     <h2>Dia dos pais na 3e soluções!!!</h2>
                     <p>Pai é uma palavra tão curta mas com tanto significado cada um
