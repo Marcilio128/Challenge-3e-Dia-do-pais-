@@ -4,7 +4,7 @@
 
 }
 .itens-registration img{
-    width: 85%;
+    width: 70%;
     height: auto;
 }
 .registration-text{
@@ -20,10 +20,13 @@
 .registration-text p{
     margin: 1rem;
 }
+.text-record{
+    visibility: hidden;
+}
 .fields-registration{   
-    width: 30%;
+    width: 35%;
     height: 15.60rem;
-    margin-top: 10rem;
+    margin-top: 15%;
 
     align-items: center;
     flex-direction: column;
@@ -59,11 +62,13 @@
     padding: 0.5rem;
     border-radius: 3rem;
 }
+
 @media only screen and (max-width: 1250px){
     .itens-registration > img{
         position: absolute;
         z-index: -1;
         width: 100%;
+        margin-top: 0%;
     }
 
     .itens-registration{
@@ -86,37 +91,40 @@
     }
     
     .fields-registration h1{
-       margin-top: 1rem;
+        margin-top: 1rem;
     }
     
     .registration-text{
         visibility: hidden;
     }
 }
+
 @media only screen and (max-width: 1100px){
     .fields-registration{   
         background-color: rgba(153, 149, 149, 0.438);
-        padding: 13rem 0 23rem 0;
+        padding: 13rem 0 20rem 0;
         margin-top: 10vh;
         width: 30vw; 
         border-radius: 5rem;
     }
 }
+
 @media only screen and (max-width: 1050px){
     .fields-registration{   
         margin-top: 5vh;
 
     }
 }
+
 @media only screen and (max-width: 970px){
     .fields-registration{   
         margin-top: 0vh;
         border-radius: 0%;
         width: 50%;
         padding: 25% 0 42% ;
-
     }
 }
+
 @media only screen and (max-width: 780px){
     .fields-registration{   
         margin-top: 0vh;
@@ -141,4 +149,24 @@
     .itens-registration > img{
         visibility: hidden;
     }
+}
+@media only screen and (max-width: 540px){
+    .fields-registration{   
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+}
+@media only screen and (max-width: 375px){
+    .fields-registration{   
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+}
+@media only screen and (max-width: 280px){
+    .fields-registration{   
+      width: 90%;
+    }
+
 }

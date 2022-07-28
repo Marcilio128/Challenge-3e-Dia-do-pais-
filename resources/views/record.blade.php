@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/record.css">
 
+
+
     <title>Login</title>
 </head>
 <body>
@@ -38,10 +40,9 @@
                         </div> 
                 </div>
             </form>
+            </div>
         </div>
     </section>
-
-    
 </body>
 </html>
 

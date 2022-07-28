@@ -68,6 +68,8 @@ li a:hover:before {
     background-color: var(--color-primary);
     padding: 1rem;
     bottom: 100%;
+    z-index: 1;
+
 }
 
 .icon{
