@@ -13,37 +13,55 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/record.css">
 
+    <script src="/js/record.js" defer></script>
 
-
-    <title>Login</title>
+    <title>Registro</title>
 </head>
+
 <body>
     <section class="registration">
         <div class="container">
             <div class="itens-registration">
-                <img src="/assets/pai-filho.jpg" alt="">
-                <img class="back-mobile" src="/assets/fundo-cell.jpeg" alt="">
+
+                <img class="background" src="/assets/pai-filho.jpg" alt="">
+                <img class="back-mobile" src="/assets/fundo-cell.png" alt="">
+    
                 <div class="registration-text">
+    
                     <h2>Dia dos pais na 3e soluções!!!</h2>
                     <p>Pai é uma palavra tão curta mas com tanto significado cada um
-                    consegue da o seu significado, venha conosco e de o seu
-                </div>
-                    
-                </p>
-                <form class="fields-registration" method="_POST" action="">
-                    <img src="/assets/3e-logo-registro.png" alt="">
+                    consegue da o seu significado, venha conosco e de o seu</p>
+                </div>            
+
+                <form class="fields-registration" method="_POST" id="form" action="">
+                
+                    <img class="background-img" src="/assets/3e-logo-registro.png" alt="">
                     <h1>Bem-Vindo</h1>
-                    <div class="input-fields">
-                        <input type="text" placeholder="Digite seu nome" />
-                        <input type="text" placeholder="Digite seu email" />
-                        <input type="text" placeholder="Digite sua senha" />
-                        <button type="submit">Entrar</button>
-                        </div> 
-                </div>
-            </form>
+                    
+                    <div class="inputFields ">
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+                    <small>Error Message</small>
+                    </div>
+
+                    <div class="inputFields ">
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+                    <small>Error Message</small>
+                    </div>
+                    
+                    <div class="inputFields ">
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+                    <small>Error Message</small>
+                    <button type="submit" id="btnSubmit" disabled="disabled" ><a id="link" href="/inicio">Entrar</a></button>
+                    </div>
+
+                    </div>
+                </form>
             </div>
         </div>
     </section>
+    
+
+    
 </body>
 </html>
 

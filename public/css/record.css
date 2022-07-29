@@ -1,31 +1,39 @@
 .itens-registration{
     display: flex;
     justify-content: space-between;
+}
 
-}
 .back-mobile{
-    visibility: hidden;
+    display: none;
 }
+
 .itens-registration img{
     width: 70%;
     height: auto;
 }
+
 .registration-text{
     position: absolute;
     text-align: center;
+
     width: 50%;
-    color: white;
-    background-color: rgba(44, 42, 42, 0.603);
     margin-top: 15%;
     padding: 5rem 0 5rem 0; 
+
+    color: var(--text-color);
+    background-color: var(--card-record-color);
+
     border-radius: 0 2rem 2rem 0;
 }
+
 .registration-text p{
     margin: 1rem;
 }
+
 .text-record{
     visibility: hidden;
 }
+
 .fields-registration{   
     width: 35%;
     height: 15.60rem;
@@ -47,29 +55,62 @@
 .fields-registration img{
     width: 8rem;
 }
-.input-fields{
+
+.inputFields{
     display: flex;
     flex-direction: column;
-
 }
-.input-fields input{
+
+.inputFields input{
     border-radius: 3rem;
     border: 1px solid var(--color-input);
+
     outline: none;
+
     padding: 1rem;
-    margin-bottom: 1rem;
 }
-.input-fields button{
+
+.inputFields button{
     border: none;
     cursor: pointer;
+    
+
     padding: 0.5rem;
     border-radius: 3rem;
 }
+.inputFields a{
+    padding: 0.5rem 0.5rem;
+    color: var(--text-color2);
+    text-decoration: none;
+}
+.inputFields small{
+    color: rgb(255, 59, 59);
+    visibility: hidden;
+    text-align: center;
+}
+
+.inputFields.error small{
+    color: rgb(255, 59, 59);
+    visibility: visible;
+    text-align: center;
+} 
+
+.inputFields.error input{
+    border: 1px solid rgb(255, 59, 59);
+}
+
+.inputFields.sucess input{
+    border: 1px solid rgb(106, 255, 60);
+}
 
 @media only screen and (max-width: 1250px){
+    .fields-registration h1{
+        color: var(--text-color);
+    }
     .itens-registration > img{
         position: absolute;
         z-index: -1;
+
         width: 100%;
         margin-top: 0%;
     }
@@ -77,14 +118,13 @@
     .itens-registration{
         display: flex;
         justify-content: center;
-
+        
         position: relative;
         z-index: 1;
-
     }
     
     .fields-registration {
-        background-color: rgba(153, 149, 149, 0.438);
+        background-color: rgba(107, 93, 93, 0.438);
         padding: 10rem 0 20rem 0; 
         border-radius: 5rem;
     }
@@ -104,10 +144,12 @@
 
 @media only screen and (max-width: 1100px){
     .fields-registration{   
-        background-color: rgba(153, 149, 149, 0.233);
+        background-color: var(--color-input-mobile);
+        
         padding: 13rem 0 20rem 0;
         margin-top: 10vh;
         width: 30vw; 
+        
         border-radius: 5rem;
     }
 }
@@ -115,15 +157,16 @@
 @media only screen and (max-width: 1050px){
     .fields-registration{   
         margin-top: 5vh;
-
     }
 }
 
 @media only screen and (max-width: 970px){
     .fields-registration{   
-        margin-top: 0vh;
         border-radius: 0%;
+        
+        margin-top: 0vh;
         width: 50%;
+        
         padding: 25% 0 42% ;
     }
 }
@@ -132,46 +175,80 @@
     .fields-registration{   
         margin-top: 0vh;
         top: 0%;
+        
         padding-top: 20%;
         padding-bottom: 47%;
-
     }
 }
-@media only screen and (max-width: 650px){
-    .fields-registration img{
-        margin-top: 1%;
-    }
 
+@media only screen and (max-width: 650px){
+    
+    .fields-registration img{
+        margin-top: 0rem;
+    }
+    
+    
+    
     .fields-registration{   
       margin-top: 30%;
       padding: 15rem 0;
-      border-radius: 3rem;
       width: 70%;
+    
+      border-radius: 3rem;
     }
 
-    .itens-registration + img{
-        visibility: hidden;
+    .itens-registration .background{
+        display: none;
     }
-}
-@media only screen and (max-width: 540px){
-    .fields-registration{   
-      margin-top: 10%;
-      margin-bottom: 10%;
-    }
+    
     .back-mobile{
-        visibility: visible;
+        display: block;
     }
 }
-@media only screen and (max-width: 375px){
+
+@media only screen and (max-width: 470px){
     .fields-registration{   
       margin-top: 10%;
       margin-bottom: 10%;
     }
-
 }
+
+@media only screen and (max-width: 380px){
+   .fields-registration{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .back-mobile{
+        display: none;
+    }
+
+    .fields-registration .background-img{
+        display: block;
+        position: absolute;
+    }
+
+    .fields-registration{
+        padding-bottom: 13rem;
+    }
+
+    .fields-registration img{
+        margin-top: -23rem;
+    }
+    
+    .fields-registration h1{
+        color: var(--text-color);
+    }
+    
+    .background-img-mobile{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 280px){
     .fields-registration{   
-      width: 90%;
+      width: 90%;  
     }
-
-}
+}   

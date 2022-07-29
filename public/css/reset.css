@@ -10,11 +10,12 @@
     --color-primary: rgb(203,86,22);
     --color-secondary: rgb(254, 204, 22);
     --text-color: rgb(255, 255, 255);
+    --text-color2: rgb(0,0,0);
     --color-underline: rgba(255, 94, 7, 0.849);
     --rodape-color-text: rgb(255, 255, 255);
-    --card-record-color: rgb(0,0,0);
-    --color-input: rgb(197, 197, 197);
-
+    --card-record-color: rgba(44, 42, 42, 0.603);
+    --color-input: rgb(0,0,0);
+    --color-input-mobile: rgba(107, 93, 93, 0.24);
 }
 
 body{
