@@ -6,11 +6,11 @@
     padding: 5rem 0 0 4rem;
 }
 .text-initial p{
-    width: 60%;
+    width: 80%;
 }
 .animation-initial{
     padding: 2rem 0 0 4rem;
-    width: 800px;
+    width: 500px;
 }
 /*sec-initial*/
 
@@ -96,16 +96,49 @@
         flex-direction: column;
     }
     
-.text-initial{
-    text-align: center;
-    align-items:center;
-    width: 90%;
+    .text-initial{
+        text-align: center;
+        align-items:center;
+        width: 90%;
+    }
+    
+    .animation-align{
+        justify-content: center;
+        display: flex;
+    }
+    
+    .animation-initial{
+         width: 500px;
+    }
 }
-.animation-align{
-    justify-content: center;
-    display: flex;
-}
-.animation-initial{
-    width: 500px;
-}
+
+@media only screen and (max-width: 280px){
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    .text-initial{
+        padding: 1rem 0rem 0 0rem;
+        width: 100%;
+    }
+    
+    .text-initial p{
+        padding: 1rem 0rem 0 0rem;
+    }
+
+    .animation-initial{
+        padding: 0;
+        width: 500px;
+    }
+
+    .meet-imgs{
+        width: 15rem; 
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    .title-meet{
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
 }

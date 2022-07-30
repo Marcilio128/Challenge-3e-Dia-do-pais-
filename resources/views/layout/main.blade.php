@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="/css/welcome.css">
     <link rel="stylesheet" href="/css/products.css">
     <link rel="stylesheet" href="/css/contacts.css">
+    <link rel="stylesheet" href="/css/tribute.css">
     <link rel="stylesheet" href="/css/aboult.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="/js/record.js"></script>
+
+
     <title>@yield('title')</title>
 
 </head>
@@ -30,9 +35,8 @@
             <ul id="menu" role="menu">
 
                 <li><a href="/">Inicio</a></li>
-                <li><a href="livros">Homenagens</a></li>
+                <li><a href="/Homenagens">Homenagens</a></li>
                 <li><a href="/sobre">Sobre</a></li>
-
             </ul>
         </nav>
     </header>
@@ -52,6 +56,7 @@
         </div>
     </footer>
 </body>
+<script src="/js/tribute.js"></script>
 
 <script src="/js/script.js"></script>
 </html>

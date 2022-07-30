@@ -199,3 +199,17 @@ li a:hover:before {
         top: -7px;
     }
 }
+
+@media only screen and (max-width:280px){
+#header{
+    padding: 0.8rem 1rem 0.8rem 1rem;
+}
+
+#menu{
+    padding: 0.8rem 1rem 0.8rem 1rem;
+
+}
+
+#menu li{
+    margin: 0 1rem;
+}}

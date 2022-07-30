@@ -56,19 +56,15 @@ function sucessValidation (input) {
 }
 
 const btn = document.querySelector("#password")
-
 btn.addEventListener("keyup", function(event){
 
     const senha = document.querySelector("#password")
 
-    const value = senha.value;
-    if (senha.value == 3253) {
+    if (senha.value == 3253  && email.value !== "" && username !== "") {
         //habilita o botão
-        document.getElementById("btnSubmit").disabled = false;
+        document.getElementById("btnSubmit").disabled = false; 
       } 
       else {
         //desabilita o botão se o conteúdo do input ficar em branco
         document.getElementById("btnSubmit").disabled = true;
-      }
-  });
-
+      }});

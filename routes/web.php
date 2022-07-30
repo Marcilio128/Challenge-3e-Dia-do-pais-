@@ -9,5 +9,8 @@ Route::get('/', function () {
 Route::get('/inicio', function () {
     return view('welcome');
 });
+Route::get('/Homenagens', function () {
+    return view('tributes');
+});
 
 

@@ -39,28 +39,25 @@
                     <h1>Bem-Vindo</h1>
                     
                     <div class="inputFields ">
-                    <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+                    <input type="text" name="name" id="name" required placeholder="Digite seu nome" autofocus data-required data-min-length="3" data-max-length="16">
                     <small>Error Message</small>
                     </div>
 
                     <div class="inputFields ">
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+                    <input type="email" name="email" id="email" required placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
                     <small>Error Message</small>
                     </div>
                     
                     <div class="inputFields ">
-                    <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+                    <input type="password" name="password" required id="password" placeholder="Senha de acesso" data-password-validate data-required>
                     <small>Error Message</small>
-                    <button type="submit" id="btnSubmit" disabled="disabled" ><a id="link" href="/inicio">Entrar</a></button>
+                    <button type="submit" id="btnSubmit" onclick="location.href='/inicio'"; disabled>Entrar</button>
                     </div>
-
                     </div>
                 </form>
             </div>
         </div>
     </section>
-    
-
     
 </body>
 </html>
