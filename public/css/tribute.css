@@ -1,182 +1,214 @@
+/*criação do modal*/
 .modal-content{
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-background-modal);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 2000;
-    display: none;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--color-background-modal);
+    
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .modal-content.show{
   display: flex;
 }
+
 textarea input{
-    resize: none;
+  resize: none;
 }
+
 #selectedFile, .button-modal{
   cursor: pointer;
+
   margin-top: 1rem;
+  padding: 1rem;
+
   border: 1px solid black;
   border-radius: 4rem;
-  padding: 1rem;
+
   background-color: transparent;
 }
+
 .modal h3{
   margin-bottom: 0rem;
 }
+
 .modal-imglogo{
     width: 6.25rem;
 }
+
 .modal{
-    text-align: center;
-    background-color: var(--color-modal);
-    min-width: 18.75rem;
-    padding: 10rem;
-    border-radius: 1rem;
-    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.449);
+  text-align: center;
+
+  background-color: var(--color-modal);
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.449);
+
+  min-width: 18.75rem;
+  padding: 10rem;
+  border-radius: 1rem;
 }
+
 .modal-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/*
-=====
-HELPERS
-=====
-*/
+
+/*Helpers-hmg*/
 
 .ha-screen-reader{
-    width: var(--ha-screen-reader-width, 1px);
-    height: var(--ha-screen-reader-height, 1px);
-    padding: var(--ha-screen-reader-padding, 0);
-    border: var(--ha-screen-reader-border, none);
+  width: var(--ha-screen-reader-width, 1px);  
+  height: var(--ha-screen-reader-height, 1px);
+
+  padding: var(--ha-screen-reader-padding, 0);
+  border: var(--ha-screen-reader-border, none);
   
-    overflow: var(--ha-screen-reader-overflow, hidden);
-  }
+  overflow: var(--ha-screen-reader-overflow, hidden);
+}
   
-  /*
-  =====
-  RESET STYLES
-  =====
-  */
+/*Reset*/
   
-  .field__input{ 
-    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+.field__input{ 
+  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
     
-    background-color: transparent;
-    border-radius: 0;
-    border: none;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
   
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   
-    font-family: inherit;
-    font-size: inherit;
-  }
+  font-family: inherit;
+  font-size: inherit;
+}
   
+/*Line-Style*/  
+.field{
+  --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+  --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);   
+  --uiFieldBorderColorActive: var(--fieldBorderColorActive, rgba(22, 22, 22, 1));
+  
+  display: var(--fieldDisplay, inline-flex);
+  position: relative;
+  font-size: var(--fieldFontSize, 1rem);
+}
+  
+.field__input{
+  box-sizing: border-box;
 
-
+  width: var(--fieldWidth, 100%);
+  height: var(--fieldHeight, 3rem);
   
-  /*
-  =====
-  CORE STYLES
-  =====
-  */
+  padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight) var(--fieldPaddingBottom, .5rem) var(--uiFieldPaddingLeft);
+  border-bottom: var(--uiFieldBorderWidth) solid var(--fieldBorderColor, rgba(0, 0, 0, .25));  
+}
   
-  .field{
-    --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
-    --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
-    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);   
-    --uiFieldBorderColorActive: var(--fieldBorderColorActive, rgba(22, 22, 22, 1));
+.field__input:focus{
+  outline: none;
+}
   
-    display: var(--fieldDisplay, inline-flex);
-    position: relative;
-    font-size: var(--fieldFontSize, 1rem);
-  }
+.field__label-wrap{
+  box-sizing: border-box;
+  pointer-events: none;
+  cursor: text;
   
-  .field__input{
-    box-sizing: border-box;
-    width: var(--fieldWidth, 100%);
-    height: var(--fieldHeight, 3rem);
-    padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight) var(--fieldPaddingBottom, .5rem) var(--uiFieldPaddingLeft);
-    border-bottom: var(--uiFieldBorderWidth) solid var(--fieldBorderColor, rgba(0, 0, 0, .25));  
-  }
-  
-  .field__input:focus{
-    outline: none;
-  }
-  
-  
-  .field__label-wrap{
-    box-sizing: border-box;
-    pointer-events: none;
-    cursor: text;
-  
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .field__label-wrap::after{
-    content: "";
-    box-sizing: border-box;
-    width: 100%;
-    height: 0;
-    opacity: 0;
-  
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
- 
-  .field__input:focus ~ .field__label-wrap::after{
-    opacity: 5;
-  }
-  
-  .modal-content.hidden{
-    display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-/*test*/ 
+.field__label-wrap::after{
+  content: "";
+  box-sizing: border-box;
+   
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+ 
+.field__input:focus ~ .field__label-wrap::after{
+  opacity: 5;
+}
+  
+.modal-content.hidden{
+  display: none;
+}
+
+/*effect-modal-hmg*/
+  
+.field_v1 .field__label-wrap::after{
+  border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
+  transition: opacity .3s ease-out;
+  will-change: opacity;
+}  
+
+/*Settings-modal-hmg*/
+.field{
+  --fieldBorderColor: var(--color-input);
+  --fieldBorderColorActive: var(--color-primary);
+  }
+
+textarea::-webkit-scrollbar {
+  width: 0px;               
+}
+
+/*Line-url-input*/ 
 .form {
   width: 100%;
-  position: relative;
   height: 60px;
+
+  position: relative;
   overflow: hidden;
 }
 
 .form input {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  color: rgb(0, 0, 0);
   padding-top: 10px;
+
+  color: rgb(0, 0, 0);
+
   border: none;
 }
+
 .form label {
   position: absolute;
   bottom: 0px;
   left: 0px;
+
   width: 100%;
   height: 100%;
+
   pointer-events: none;
+
   border-bottom: 1px solid rgb(0, 0, 0);
 }
+
 .form label::after {
   content: "";
+
   position: absolute;
   bottom: -1px;
+  border-bottom: 2px solid var(--color-primary);
   left: 0px;
+
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid var(--color-primary);
+
   transform: translateX(-100%);
   transition: all 0.3s ease;
 }
@@ -185,61 +217,47 @@ HELPERS
   position: absolute;
   bottom: 0px;
   left: 0px;
+
   padding-bottom: 2px;
+
   transition: all 0.3s ease;
 }
+
 .form input:focus {
   outline: none;
 }
-.form input:focus + .label-name .content-name,
-.form input:valid + .label-name .content-name {
+
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name {
   transform: translateY(-150%);
-  font-size: 14px;
-  left: 0px;
   color:var(--color-primary);
+  
+  font-size: 14px;
+  
+  left: 0px;
 }
-.form input:focus + .label-name::after,
-.form input:valid + .label-name::after {
+
+.form input:focus + .label-name::after, .form input:valid + .label-name::after {
   transform: translateX(0%);
 }
 
-/*effect 1*/
-  
-  .field_v1 .field__label-wrap::after{
-    border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
-    transition: opacity .3s ease-out;
-    will-change: opacity;
-  }  
-  /*
-  =====
-  LEVEL 4. SETTINGS
-  =====
-  */
-
-  .field{
-    --fieldBorderColor: #000000;
-    --fieldBorderColorActive: var(--color-primary);
-  }
-
-  textarea::-webkit-scrollbar {
-    width: 0px;               
-  }
 
 .sec-acess .container{
   display: flex;
+  
 }
+
 .sec-acess img{
   width: 60vw;
   height: 90vh;
   object-fit: cover;
 }
+
 .acess-content{
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 5%;
-  
 }
+
 .acess-content h3{
   font-size: 1.3rem;
   font-weight: 300;
@@ -253,26 +271,39 @@ HELPERS
   border-radius: 3rem;
   cursor: pointer;
 }
-.acess-btn::hover{
-  border: 1px solid rgb(255, 0, 0);
+
+#slide img{
+  opacity: 0;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  object-fit: cover;
 }
-  @media (min-width: 1024px){
+
+#slide img.slideOne{
+  opacity: 1;
+}
+
+#rodapeTribute{
+  margin-top: 16%;
+  bottom: 0%;
+}
+
+@media (min-width: 1024px){
     
-    .linktr{
-      position: absolute; 
-      right: 1rem; 
-      bottom: 1rem;
-    }
+  .linktr{
+    position: absolute; 
+    right: 1rem; 
+    bottom: 1rem;
   }
+}
   
-  .r-link{
-      --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
-      --uirLinkTextColor: var(--rLinkTextColor);
-      --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+.r-link{
+    --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+    --uirLinkTextColor: var(--rLinkTextColor);
+    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
   
-      display: var(--uirLinkDisplay) !important;
-      color: var(--uirLinkTextColor) !important;
-      text-decoration: var(--uirLinkTextDecoration) !important;
-  }
-  
-  
+    display: var(--uirLinkDisplay) !important;
+    color: var(--uirLinkTextColor) !important;
+    text-decoration: var(--uirLinkTextDecoration) !important;
+}

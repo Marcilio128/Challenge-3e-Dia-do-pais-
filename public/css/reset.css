@@ -68,8 +68,10 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
 }
 
 main{
+    bottom: 0;
     flex: 1;
 }
