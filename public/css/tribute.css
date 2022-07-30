@@ -15,7 +15,7 @@
 .modal-content.show{
   display: flex;
 }
-textarea{
+textarea input{
     resize: none;
 }
 #selectedFile, .button-modal{
@@ -136,7 +136,7 @@ HELPERS
     bottom: 0;
     left: 0;
   }
-  
+ 
   .field__input:focus ~ .field__label-wrap::after{
     opacity: 5;
   }
@@ -145,8 +145,63 @@ HELPERS
     display: none;
 }
 
+/*test*/ 
+.form {
+  width: 100%;
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
 
+.form input {
+  width: 90%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  padding-top: 10px;
+  border: none;
+}
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.form label::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid var(--color-primary);
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
 
+.content-name {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+.form input:focus {
+  outline: none;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  left: 0px;
+  color:var(--color-primary);
+}
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  transform: translateX(0%);
+}
 
 /*effect 1*/
   
@@ -162,7 +217,7 @@ HELPERS
   */
 
   .field{
-    --fieldBorderColor: #D1C4E9;
+    --fieldBorderColor: #000000;
     --fieldBorderColorActive: var(--color-primary);
   }
 
@@ -170,6 +225,37 @@ HELPERS
     width: 0px;               
   }
 
+.sec-acess .container{
+  display: flex;
+}
+.sec-acess img{
+  width: 60vw;
+  height: 90vh;
+  object-fit: cover;
+}
+.acess-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+  
+}
+.acess-content h3{
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.acess-btn{
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.acess-btn::hover{
+  border: 1px solid rgb(255, 0, 0);
+}
   @media (min-width: 1024px){
     
     .linktr{

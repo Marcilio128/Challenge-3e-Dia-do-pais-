@@ -26,10 +26,20 @@
         </div>
  </section>
 
- <section>
-    <div>
-        <div>
-            <button type="submit" class="" id="open">Abrir</button>
+ <section class="sec-acess">
+    <div class="container">
+        <img src="/assets/img-slideshow.png" alt="">
+        <div class="acess-content">
+        <h3>Gostaria de criar uma homenagem?<br> Click aqui!!!</h3>     
+        <button type="submit" class="acess-btn" id="open">Homenagear</button>
+        <h3>Gostaria de ver uma homenagem?<br> Insira seu link de acesso aqui!!!</h3>    
+        <div class="form">
+            <input type="url" name="text" autocomplete="off" required />
+            <label for="text" class="label-name">
+                <span class="content-name">URL</span>
+            </label>
+        </div>
+        <button type="submit" class="acess-btn" id="open">Enviar</button>
             
         </div>
     </div>
