@@ -30,14 +30,9 @@
  
  <section class="sec-acess">
      
+     <img class="slideOne" src="/assets/img-slideshow02.png" alt="">
     <div class="container">
         <div class="acess-content">
-        <div id="slide">
-     <img class="slideOne" src="/assets/img-slideshow.png" alt="">
-     <img src="/assets/img-slideshow02.png" alt="">
-     <img src="/assets/img-slideshow03.png" alt="">
-
-     </div>
         <h3>Gostaria de criar uma homenagem?<br> Click aqui!!!</h3>     
         <button type="submit" class="acess-btn" id="open">Homenagear</button>
         <h3>Gostaria de ver uma homenagem?<br> Insira seu link de acesso aqui!!!</h3>    
