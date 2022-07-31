@@ -30,10 +30,9 @@
 </head>
 <body>
     <header id="header" >
-        <img class="logo-3e" src="/assets/logo3e.png" alt=""> </img>
+        <img class="logo-3e" src="/assets/3e-logo.png" alt=""> </img>
 
             <nav id="nav">
-
                 <button id="btn-mobile"> <span id="icon-menu"></span> </button>
 
             <ul id="menu" role="menu">
@@ -52,16 +51,17 @@
 
     <div class="icon">
     <img class="logo-3e" src="/assets/logo3e.png" alt=""> </img>
-            <p>&copy; 3E Soluções</p>
+            <p style="color: white;">&copy; 3E Soluções</p>
 
-        <a href="#"><img src="/assets/instagram.png" class="insta" alt=""></a>
-        <a href="#"><img src="/assets/facebook.png" class="face" alt=""></a>
-        <a href="#"><img src="/assets/whatsapp.png" class="wpp" alt=""></a>
+            <a href="#"><img src="/assets/linkedin.png" class="linedin" alt=""></a>
+            <a href="#"><img src="/assets/facebook.png" class="face" alt=""></a>
+            <a href="#"><img src="/assets/whatsapp.png" class="wpp" alt=""></a>
 
         </div>
     </footer>
 </body>
-<script src="/js/tribute.js"></script>
 
+<script src="/js/tribute.js"></script>
 <script src="/js/script.js"></script>
+
 </html>

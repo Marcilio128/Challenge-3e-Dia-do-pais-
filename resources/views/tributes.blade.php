@@ -30,7 +30,7 @@
  
  <section class="sec-acess">
      
-     <img class="slideOne" src="/assets/img-slideshow02.png" alt="">
+     <img class="slideOne" src="/assets/img-tribute.png" alt="">
      <div class="card-tribute">
         <p>Venha Homenagear a quem caminhou uma estrada toda com você!!!</p>
      </div>
