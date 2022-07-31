@@ -251,7 +251,16 @@ textarea::-webkit-scrollbar {
   height: 90vh;
   object-fit: cover;
 }
+.card-tribute{
+  position: absolute;
+  background-color: var(--card-record-color);
+  margin-top: 5rem;
+  padding: 3vw 1vw 3vw;
+}
 
+.card-tribute p{
+  color: var(--text-color);
+}
 .acess-content{
   text-align: center;
   align-items: center;
@@ -272,6 +281,11 @@ textarea::-webkit-scrollbar {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1159px){
+.card-tribute{
+  visibility: hidden;
+  }
+}
 
 @media (min-width: 1024px){
     
@@ -305,6 +319,10 @@ textarea::-webkit-scrollbar {
     display: none;
     
   }
+  .card-tribute{
+    visibility: hidden;
+  }
+  
   .form {
     width: 60%;
     height: 60px;

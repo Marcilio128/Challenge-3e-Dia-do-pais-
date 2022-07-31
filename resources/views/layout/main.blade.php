@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/products.css">
     <link rel="stylesheet" href="/css/contacts.css">
     <link rel="stylesheet" href="/css/tribute.css">
-    <link rel="stylesheet" href="/css/aboult.css">
+    <link rel="stylesheet" href="/css/about.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,11 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="/js/record.js"></script>
 
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <title>@yield('title')</title>
 
 </head>
@@ -34,7 +38,8 @@
 
             <ul id="menu" role="menu">
 
-                <li><a href="/">Inicio</a></li>
+                <li><a href="/">Cadastro</a></li>
+                <li><a href="/inicio">Inicio</a></li>
                 <li><a href="/Homenagens">Homenagens</a></li>
                 <li><a href="/sobre">Sobre</a></li>
             </ul>

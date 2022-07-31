@@ -31,6 +31,9 @@
  <section class="sec-acess">
      
      <img class="slideOne" src="/assets/img-slideshow02.png" alt="">
+     <div class="card-tribute">
+        <p>Venha Homenagear a quem caminhou uma estrada toda com você!!!</p>
+     </div>
     <div class="container">
         <div class="acess-content">
         <h3>Gostaria de criar uma homenagem?<br> Click aqui!!!</h3>     

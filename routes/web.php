@@ -13,4 +13,7 @@ Route::get('/Homenagens', function () {
     return view('tributes');
 });
 
+Route::get('/sobre', function () {
+    return view('about');
+});
 
