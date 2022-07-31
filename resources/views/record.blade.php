@@ -31,14 +31,12 @@
                 <img class="back-mobile" src="/assets/fundo-cell.png" alt="">
     
                 <div class="registration-text">
-    
                     <h2>Dia dos pais na 3e soluções!!!</h2>
                     <p>Pai é uma palavra tão curta mas com tanto significado cada um
                     consegue da o seu significado, venha conosco e de o seu</p>
                 </div>            
 
                 <form class="fields-registration" method="_POST" id="form" action="">
-                
                     <img class="background-img" src="/assets/3e-logo-registro.png" alt="">
                     <h1>Bem-Vindo</h1>
                     
@@ -56,12 +54,13 @@
                     <input type="password" name="password" required id="password" placeholder="Senha de acesso" data-password-validate data-required>
                     <small>Error Message</small>
                     <button type="submit" id="btnSubmit" onclick="location.href='/inicio'"; disabled>Entrar</button>
+
                     </div>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
     
 </body>
 </html>

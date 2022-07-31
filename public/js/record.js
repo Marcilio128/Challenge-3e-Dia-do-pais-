@@ -1,3 +1,4 @@
+//Tela De Cadastro
 const form = document.getElementById('form');
 const username = document.getElementById('name');
 const email = document.getElementById('email');
@@ -68,3 +69,4 @@ btn.addEventListener("keyup", function(event){
         //desabilita o botão se o conteúdo do input ficar em branco
         document.getElementById("btnSubmit").disabled = true;
       }});
+//Tela De Cadastro

@@ -41,7 +41,7 @@ textarea input{
 }
 
 .modal-imglogo{
-    width: 6.25rem;
+  width: 6.25rem;
 }
 
 .modal{
@@ -117,7 +117,9 @@ textarea input{
   
 .field__label-wrap{
   box-sizing: border-box;
+
   pointer-events: none;
+  
   cursor: text;
   
   position: absolute;
@@ -160,7 +162,7 @@ textarea input{
 .field{
   --fieldBorderColor: var(--color-input);
   --fieldBorderColorActive: var(--color-primary);
-  }
+}
 
 textarea::-webkit-scrollbar {
   width: 0px;               
@@ -241,7 +243,6 @@ textarea::-webkit-scrollbar {
   transform: translateX(0%);
 }
 
-
 .sec-acess {
   display: flex;
 }
@@ -261,6 +262,7 @@ textarea::-webkit-scrollbar {
 .card-tribute p{
   color: var(--text-color);
 }
+
 .acess-content{
   text-align: center;
   align-items: center;
@@ -282,8 +284,8 @@ textarea::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 1159px){
-.card-tribute{
-  visibility: hidden;
+  .card-tribute{
+    visibility: hidden;
   }
 }
 
@@ -314,6 +316,7 @@ textarea::-webkit-scrollbar {
   
   }
 }
+
 @media only screen and (max-width: 950px){
   .slideOne{
     display: none;
@@ -335,6 +338,7 @@ textarea::-webkit-scrollbar {
     margin-top: 5rem;
   }
 }
+
 @media only screen and (max-width: 650px){
   #selectedFile, .button-modal{
     margin-top: 1rem;
@@ -350,14 +354,15 @@ textarea::-webkit-scrollbar {
   }
 
   
-.modal-form{
-  display: block;
-  flex-direction: column;
-  align-items: left;
-}
-.form {
-  width: 80%;
-  height: 60px;
-  margin-left: 10%;
-}
+  .modal-form{
+    display: block;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .form {
+    width: 80%;
+    height: 60px;
+    margin-left: 10%;
+  }
 }

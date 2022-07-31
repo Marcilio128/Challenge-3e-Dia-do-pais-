@@ -43,9 +43,11 @@
   
   #flip > div > div {
     color: var(--text-color2);
+
     padding:0px 1vw;
     height:55px;
     margin-bottom: 2.1rem;
+    
     display:inline-block;
   }
   

@@ -16,10 +16,12 @@
     list-style: none;
     gap: 5rem;
 }
+
 .logo-3e{
     width: 4rem;
     height: 3rem;
 }
+
 li a{
     color: var(--text-color);
     cursor: pointer;
@@ -61,6 +63,7 @@ li a:hover:before {
 .img1{
     width: 50%;
 }
+
 /*MENU*/
 
 /*RODAPE*/
@@ -183,7 +186,6 @@ li a:hover:before {
 
         position: relative;
         transition: .3s;
-
     }
     
     #nav.active #icon-menu{
@@ -201,15 +203,15 @@ li a:hover:before {
 }
 
 @media only screen and (max-width:280px){
-#header{
-    padding: 0.8rem 1rem 0.8rem 1rem;
+    #header{
+         padding: 0.8rem 1rem 0.8rem 1rem;
+    }
+
+    #menu{
+        padding: 0.8rem 1rem 0.8rem 1rem;
+    }
+
+    #menu li{
+        margin: 0 1rem;
+    }
 }
-
-#menu{
-    padding: 0.8rem 1rem 0.8rem 1rem;
-
-}
-
-#menu li{
-    margin: 0 1rem;
-}}

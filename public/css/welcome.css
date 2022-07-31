@@ -1,13 +1,17 @@
+/*sec-initial*/
 .sec-initial .container{
     display: flex;
     justify-content: space-between;
 }
+
 .text-initial{
     padding: 5rem 0 0 4rem;
 }
+
 .text-initial p{
     width: 80%;
 }
+
 .animation-initial{
     padding: 2rem 0 0 4rem;
     width: 500px;
@@ -19,21 +23,26 @@
     display: flex;
     justify-content: center;
 }
+
 .meet-content{
     margin: auto;
     text-align: center;
     gap: 5rem;
     margin-bottom: 5rem;
 }
+
 .meet-turing{
     width: 30%;
 }
+
 .meet-pitagoras{
     width: 30%;
 }
+
 .meet-newton{
     width: 30%;
 }
+
 .title-meet{
     margin-bottom: 3rem;
     text-align: center;
@@ -48,6 +57,7 @@
     margin-bottom: 2rem;
     object-fit: cover;
 }
+
 .meet-content h3{
     margin-bottom: 2rem;
 
@@ -71,7 +81,6 @@
     .title-meet{
         margin-top: 5rem;
     }
-    
 
     .meet-content{
         text-align: center;
@@ -90,6 +99,7 @@
         width: 90%;
     }
 }
+
 @media only screen and (max-width: 850px){
     .sec-initial .container{
         display: block;

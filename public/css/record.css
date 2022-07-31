@@ -78,11 +78,13 @@
     padding: 0.5rem;
     border-radius: 3rem;
 }
+
 .inputFields a{
     padding: 0.5rem 0.5rem;
     color: var(--text-color2);
     text-decoration: none;
 }
+
 .inputFields small{
     color: rgb(255, 59, 59);
     visibility: hidden;
@@ -107,6 +109,7 @@
     .fields-registration h1{
         color: var(--text-color);
     }
+
     .itens-registration > img{
         position: absolute;
         z-index: -1;
@@ -186,8 +189,6 @@
     .fields-registration img{
         margin-top: 0rem;
     }
-    
-    
     
     .fields-registration{   
       margin-top: 30%;
