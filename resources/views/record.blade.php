@@ -32,8 +32,8 @@
     
                 <div class="registration-text">
                     <h2>Dia dos pais na 3e soluções!!!</h2>
-                    <p>Pai é uma palavra tão curta mas com tanto significado cada um
-                    consegue da o seu significado, venha conosco e de o seu</p>
+                    <p>Pai é uma palavra tão curta mas com tanto significado. <br>
+                       Venha e de o seu significado a essa palavra!!!</p>
                 </div>            
 
                 <form class="fields-registration" method="_POST" id="form" action="">

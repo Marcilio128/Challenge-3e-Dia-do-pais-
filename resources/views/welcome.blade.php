@@ -7,9 +7,9 @@
     <div class="container">
         <div class="text-initial">
             <h1>Bem vindo ao dia dos pais na 3e engenharia</h1>
-            <p>O dia dos pais é o dia de homenagearmos aquele que é nosso grande exemplo,
-                que está conosco em todas as horas, que nunca nos deixou faltar amor, carinho 
-                e que sempre nós compreendeu, venha homenagear seu grande herói!!! 
+            <p>O dia dos pais é o dia de homenagearmos aquele que é o nosso grande exemplo,
+                que está conosco em todas as horas, que nunca nos deixou faltar amor e carinho, 
+                que sempre nós compreendeu. Venha homenagear seu grande herói!!! 
             </p>
         </div>
         <div class="animation-align">
