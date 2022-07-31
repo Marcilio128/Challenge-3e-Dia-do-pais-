@@ -9,8 +9,8 @@
                 <h2>Sobre-nós da 3e 
                 
                 <div id=flip>
-                    <div><div>Solução</div></div>
-                    <div><div>Engenharia</div></div>
+                    <div><div style="color: var(--color-secondary);">Solução</div></div>
+                    <div><div style="color: var(--color-primary);">Engenharia</div></div>
                 </div>
                 </h2>
 

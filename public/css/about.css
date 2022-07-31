@@ -42,7 +42,7 @@
   
   #flip > div > div {
     color: var(--text-color2);
-    padding:0px 12px;
+    padding:0px 10px;
     height:55px;
     margin-bottom: 2.1rem;
     display:inline-block;
